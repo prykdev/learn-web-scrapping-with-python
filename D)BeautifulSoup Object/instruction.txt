@@ -1,0 +1,36 @@
+The BeautifulSoup Object
+When we printed out all of that HTML from our request, it seemed pretty long and messy. How could we pull out the relevant information from that long string?
+
+BeautifulSoup is a Python library that makes it easy for us to traverse an HTML page and pull out the parts we’re interested in. We can import it by using the line:
+
+from bs4 import BeautifulSoup
+Then, all we have to do is convert the HTML document to a BeautifulSoup object!
+
+If this is our HTML file, rainbow.html:
+
+<body>
+  <div>red</div>
+  <div>orange</div>
+  <div>yellow</div>
+  <div>green</div>
+  <div>blue</div>
+  <div>indigo</div>
+  <div>violet</div>
+</body>
+soup = BeautifulSoup("rainbow.html", "html.parser")
+"html.parser" is one option for parsers we could use. There are other options, like "lxml" and "html5lib" that have different advantages and disadvantages, but for our purposes we will be using "html.parser" throughout.
+
+With the requests skills we just learned, we can use a website hosted online as that HTML:
+
+webpage = requests.get("http://rainbow.com/rainbow.html", "html.parser")
+soup = BeautifulSoup(webpage.content)
+When we use BeautifulSoup in combination with pandas, we can turn websites into DataFrames that are easy to manipulate and gain insights from.
+
+Instructions
+1.
+Import the BeautifulSoup package.
+
+2.
+Create a BeautifulSoup object out of the webpage content and call it soup. Use "html.parser" as the parser.
+
+Print out soup! Look at how it contains all of the HTML of the page! We will learn how to traverse this content and find what we need in the next exercises.
