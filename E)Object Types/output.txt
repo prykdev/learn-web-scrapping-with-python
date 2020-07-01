@@ -1,0 +1,2 @@
+<p class="text">Click to learn more about each turtle</p>
+Click to learn more about each turtle

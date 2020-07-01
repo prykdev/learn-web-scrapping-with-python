@@ -1,0 +1,19 @@
+Review
+Amazing! Now you know the basics of how to use BeautifulSoup to turn websites into data. If you take our Data Visualization or Data Manipulation courses, you can see how you might analyze this data and find patterns!
+
+You now can see how far the rabbit hole goes by finding some interesting data you want to analyze on the web. But remember to be respectful to site owners if you test out your scraping chops on real sites.
+
+Instructions
+1.
+Create a DataFrame out of the turtle_data dictionary you’ve created. Call it turtle_df.
+
+
+Stuck? Get a hint
+2.
+Wow! Now we have all of the turtles’ information in one DataFrame. But obviously, in just scraping this data and plopping it into Pandas, we’re left with a pretty messy DataFrame.
+
+There are newlines in the data, the column names are hidden in strings in the rows, and none of the numerical data is stored as a numerical type.
+
+It would be pretty hard to create any sort of analysis on this raw data. What if we wanted to make a histogram of the ages of turtles in the Shellter?
+
+This is where Data Cleaning and Regex comes in! Try to practice what you know about data cleaning to get turtles_df into a usable state. It’s up to you to decide what “usable” means to you.
