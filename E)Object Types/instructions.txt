@@ -22,8 +22,11 @@ NavigableStrings are the pieces of text that are in the HTML tags on the page. Y
 
 print(soup.div.string)
 An example div
-Instructions
-1.
+
+
+
+Task
+1 .
 Print out the first p tag on the shellter.html page.
 
 2.
